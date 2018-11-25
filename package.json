@@ -1,0 +1,49 @@
+{
+  "name": "react-tap-feedback",
+  "version": "1.0.0",
+  "description": ":active pseudo-class with react for mobile",
+  "keywords": [
+    "react",
+    "react-component",
+    "tap feeedback",
+    "touch feeedback",
+    "active pseudo"
+  ],
+  "homepage": "https://github.com/react-component/m-feedback",
+  "author": "edmund chen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-component/m-feedback.git"
+  },
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "config": {
+    "port": 8500,
+    "entry": {
+      "react-tap-feedback": [
+        "./index.js"
+      ]
+    }
+  },
+  "scripts": {
+    "dist": "rc-tools run dist",
+    "compile": "rc-tools run compile --babel-runtime",
+    "build": "rc-tools run build",
+    "start": "rc-tools run server"
+  },
+  "dependencies": {
+    "babel-runtime": "6.x",
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "rc-tools": "6.x",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0"
+  }
+}
